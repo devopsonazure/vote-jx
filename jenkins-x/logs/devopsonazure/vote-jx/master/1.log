@@ -1,0 +1,98 @@
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8jp2c[0m
+{"level":"info","ts":1594093502.9372637,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594093502.937579,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-pg2xx[0m
+{"level":"info","ts":1594093504.306149,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594093504.3071399,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-devopsonazure-vote-jx-master-fbzbz-fhd2q[0m
+{"level":"info","ts":1594093544.3398607,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594093546.8784208,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/devopsonazure/vote-**.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b93cbfe8e36841d342c6c9129365408492da11b2
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-python-unittest[0m
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0707 03:45:49.940834       9 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0003] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0005] Built cross stage deps: map[]                
+[36mINFO[0m[0005] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0007] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0008] Executing 0 build triggers                   
+[36mINFO[0m[0008] Checking for cached layer aks**.azurecr.io/todo/cache:915585a6a5471f0329a7d672650b4a808925b4190c4b67377f8b10fff137bfc8... 
+[36mINFO[0m[0009] No cached layer found for cmd RUN pip install redis 
+[36mINFO[0m[0009] Using files from context: [/workspace/source/azure-vote] 
+[36mINFO[0m[0009] Unpacking rootfs as cmd RUN pip install redis requires it. 
+[36mINFO[0m[0038] RUN pip install redis                        
+[36mINFO[0m[0038] Taking snapshot of full filesystem...        
+[36mINFO[0m[0090] Resolving 31913 paths                        
+[36mINFO[0m[0094] cmd: /bin/sh                                 
+[36mINFO[0m[0094] args: [-c pip install redis]                 
+[36mINFO[0m[0094] Running: [/bin/sh -c pip install redis]      
+Collecting redis
+  Downloading redis-3.5.3-py2.py3-none-any.whl (72 kB)
+Installing collected packages: redis
+Successfully installed redis-3.5.3
+WARNING: You are using pip version 20.1; however, version 20.1.1 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+[36mINFO[0m[0095] Taking snapshot of full filesystem...        
+[36mINFO[0m[0096] Resolving 31948 paths                        
+[36mINFO[0m[0099] Using files from context: [/workspace/source/azure-vote] 
+[36mINFO[0m[0099] Pushing layer aks**.azurecr.io/todo/cache:915585a6a5471f0329a7d672650b4a808925b4190c4b67377f8b10fff137bfc8 to cache now 
+[36mINFO[0m[0099] ADD /azure-vote /app                         
+[36mINFO[0m[0099] Resolving 7 paths                            
+[36mINFO[0m[0099] Taking snapshot of files...                  
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/vote-** to an unshallow repository
+Generating change log from git ref 0a8dd8d12318b94f0f0ab9dd3c85ae448193c64c => 94a37268e6b24c62737cc1e293497d38843692db
+WARNING: No release found for devopsonazure/vote-** and tag v0.0.2 so creating a new release
+Updated the release information at https://github.com/devopsonazure/vote-**/releases/tag/v0.0.2
+generated: /workspace/source/charts/vote-**/templates/release.yaml
+Created Release vote-**-0-0-2 resource in namespace **
+Updating PipelineActivity devopsonazure-vote-**-master-1 with version 0.0.2
+Updated PipelineActivities devopsonazure-vote-**-master-1 with release notes URL: https://github.com/devopsonazure/vote-**/releases/tag/v0.0.2
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file vote-**-0.0.2.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-fbzbz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app vote-** version 0.0.2 to namespace **-staging
+Created Pull Request: https://github.com/devopsonazure/environment-**-staging/pull/3
+Added label updatebot to Pull Request https://github.com/devopsonazure/environment-**-staging/pull/3
+got git provider status pending from PR https://github.com/devopsonazure/environment-**-staging/pull/3
+Pull Request https://github.com/devopsonazure/environment-**-staging/pull/3 is merged at sha 937d4e043b2528384833a90303931c359cfccc91
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names vote-**, **-vote-**, **-staging-vote-**
