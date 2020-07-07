@@ -1,0 +1,37 @@
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-9qs56[0m
+{"level":"info","ts":1594100565.539256,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594100565.5396988,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-7t98r[0m
+{"level":"info","ts":1594100566.9912398,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594100566.9921107,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-devopsonazure-vote-jx-master-re-dc4jl-rdgl4[0m
+{"level":"info","ts":1594100575.0374165,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594100577.4876602,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/devopsonazure/vote-**.git @ v0.0.5 in path /workspace/source"}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:0d0420a6eb712b29fb28b00cf262ff0d9e67137a
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-python-unittest[0m
+failed to try resolving symlinks in path "/var/log/pods/**_devopsonazure-vote-**-master-re-dc4jl-4-from-build-pack-7qrr2-pod-1a304b_815d2242-2e3f-446b-ada9-0369b7664b5f/step-build-python-unittest/0.log": lstat /var/log/pods/**_devopsonazure-vote-**-master-re-dc4jl-4-from-build-pack-7qrr2-pod-1a304b_815d2242-2e3f-446b-ada9-0369b7664b5f/step-build-python-unittest/0.log: no such file or directory
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+unable to retrieve container logs for docker://48d29c549739a07251eeccc79bf65444d67f1ee7b189a1bca9b5932ecaffb14e
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+unable to retrieve container logs for docker://db23362634b997e4adf47b83d2cefe829d892eb1f289530ec0684811d7693b76
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-dc4jl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+unable to retrieve container logs for docker://c4648e1583cf5962de6932c583b86c5998527228597d9107a656aa2ec800db98
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-changelog'. The execution of the pipeline has stopped.[0m
