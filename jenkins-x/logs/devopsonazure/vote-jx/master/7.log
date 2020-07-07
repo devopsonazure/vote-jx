@@ -1,0 +1,79 @@
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-dtjqf[0m
+{"level":"info","ts":1594115104.5877085,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594115104.5879736,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-zsw2n[0m
+{"level":"info","ts":1594115105.5440927,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594115105.545227,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-devopsonazure-vote-jx-master-re-sqrjh-778f2[0m
+{"level":"info","ts":1594115113.4195378,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594115115.9457831,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/devopsonazure/vote-**.git @ v0.0.8 in path /workspace/source"}
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:bd633350916a9a2601008ef43e20bb73432e7938
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-build-python-unittest[0m
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0707 09:45:18.317112      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0001] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0004] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0006] Built cross stage deps: map[]                
+[36mINFO[0m[0006] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0007] Retrieving image manifest tiangolo/uwsgi-nginx-flask:python3.6 
+[36mINFO[0m[0009] Executing 0 build triggers                   
+[36mINFO[0m[0009] Checking for cached layer aks**.azurecr.io/todo/cache:915585a6a5471f0329a7d672650b4a808925b4190c4b67377f8b10fff137bfc8... 
+[36mINFO[0m[0010] Using caching version of cmd: RUN pip install redis 
+[36mINFO[0m[0010] Using files from context: [/workspace/source/azure-vote] 
+[36mINFO[0m[0010] Unpacking rootfs as cmd ADD /azure-vote /app requires it. 
+[36mINFO[0m[0044] RUN pip install redis                        
+[36mINFO[0m[0044] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0044] Using files from context: [/workspace/source/azure-vote] 
+[36mINFO[0m[0044] ADD /azure-vote /app                         
+[36mINFO[0m[0044] Resolving 7 paths                            
+[36mINFO[0m[0044] Taking snapshot of files...                  
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/vote-** to an unshallow repository
+Generating change log from git ref 7404b66a3b908b3a04cef0084c047248d14a424b => cd0f1b4563aff8a9dea98be5ea4b9ebdb38f1f56
+WARNING: Failed to enrich commit bd633350916a9a2601008ef43e20bb73432e7938 with issues: users.jenkins.io "x-0" already exists
+WARNING: Failed to enrich commit bd633350916a9a2601008ef43e20bb73432e7938 with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+Updated the release information at https://github.com/devopsonazure/vote-**/releases/tag/v0.0.8
+generated: /workspace/source/charts/vote-**/templates/release.yaml
+Created Release vote-**-0-0-8 resource in namespace **
+Updating PipelineActivity devopsonazure-vote-**-master-7 with version 0.0.8
+Updated PipelineActivities devopsonazure-vote-**-master-7 with release notes URL: https://github.com/devopsonazure/vote-**/releases/tag/v0.0.8
+
+Showing logs for build [32mdevopsonazure-vote-jx-master-re-sqrjh-7[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file vote-**-0.0.8.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 409 response: {"error":"file already exists"}
+error: Failed to post chart to http://jenkins-x-chartmuseum:8080/api/charts due to response 409: {"error":"file already exists"}
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-helm-release'. The execution of the pipeline has stopped.[0m
